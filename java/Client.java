@@ -5,18 +5,20 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		try (Socket socket = new Socket("54.92.184.126", 8080)) {
-			InputStream input = socket.getInputStream();
-			InputStreamReader reader = new InputStreamReader(input);
+		try (Socket socket = new Socket(args[0], Integer.parseInt(args[1]))) {
+			BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
+			
+			System.out.println("Sending \"Hello in Java\"");
+			writer.println("Hello in Java");
 
-			int character;
-			StringBuilder data = new StringBuilder();
-
-			while((character = reader.read()) != -1) {
-				data.append((char) character);
+			try {
+				String s = reader.readLine();
+				System.out.println("Received: \"" + s + "\"");
 			}
-
-			System.out.println(data);
+			catch (IOException e) {
+				System.out.println("ERROR: " + e.getLocalizedMessage() + "\n");
+			}
 
 		}
 		catch (IOException ex) {
