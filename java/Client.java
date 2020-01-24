@@ -38,7 +38,7 @@ public class Client {
 			}
 			
 			// Clean up the program by closing the Socket
-			socket.close()
+			socket.close();
 
 		}
 		// If there is an exception in creating the socket, print the exception
