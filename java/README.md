@@ -18,7 +18,9 @@ Java uses Sockets, an endpoint for communication between servers and clients, to
 
 **Sources**
 [PrintWriter JavaDocs](https://docs.oracle.com/javase/7/docs/api/java/io/PrintWriter.html)
+
 [Socket JavaDocs](https://docs.oracle.com/javase/7/docs/api/java/net/Socket.html)
+
 [BufferedReader JavaDocs](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/BufferedReader.html) 
 
 
