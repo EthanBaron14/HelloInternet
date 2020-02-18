@@ -1,5 +1,13 @@
 # helloJava 
 
+### Contributor Information
+
+Ethan Baron (EthanBaron14)
+
+Catherine Meadows (catherinemeadows)
+
+Benjamin DeVierno (bdevierno1)
+
 ### Language
 
 Java
