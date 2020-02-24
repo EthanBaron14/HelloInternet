@@ -9,6 +9,10 @@ public class Client {
 	*	@param args command line arguments for program
 	*/
 	public static void main(String[] args) {
+		
+		if (args.length != 2) {
+			System.out.println("ERROR: Improper argument count. Proper usage: java Client <IP Address> <Port>");
+		}
 
 		// Create the socket with the IP address and port as specified in command line arguments
 		// The Socket constructor takes the IP address as a String and the port as an integer
