@@ -14,7 +14,7 @@ Java
 
 ### Build and Run Instructions 
 
-To connect the Java client to a server, ensure that the server is run first before running 'Client.java'. To compile 'Client.java' on command line, use command `javac Client.java`. To run, use command `java Client` or `./Client` while in the directory where 'Client.java' is hosted.   
+To connect the Java client to a server, ensure that the server is run first before running 'Client.java'. To compile 'Client.java' on command line, use command `javac Client.java`. To run, use command `java Client` or while in the directory where 'Client.java' is hosted.   
 
 
 
